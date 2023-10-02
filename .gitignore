@@ -1,0 +1,54 @@
+﻿# Carpeta bin generada por la compilación
+bin/
+
+# Carpeta obj generada por la compilación
+obj/
+
+# Archivos ejecutables
+*.exe
+*.dll
+
+# Archivos generados por Visual Studio
+.vscode/
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Carpetas de dependencias de NuGet
+packages/
+
+# Carpetas de respaldo y caché
+Backup*/
+*_Backup*/
+*.bak
+*.cache
+
+# Archivos y carpetas específicas que pueden ser generados por el sistema operativo o herramientas
+[Tt]humbs.db
+.DS_Store
+*.log
+*.swp
+
+# Archivos temporales
+*~
+
+# Carpetas generadas por Rider de JetBrains
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/*.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/dictionaries/
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/shelf/
+.idea/codeStyles/
+.idea/scopes/
+.idea/caches/
+.idea/inspectionProfiles/
+.idea/externalAnnotations/
+.idea/assetWizardSettings.xml
+.idea/revisions/
+.idea/workspace/
