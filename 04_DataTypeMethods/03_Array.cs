@@ -33,7 +33,7 @@ public class Array
         Console.WriteLine("********************************");
 
 
-        // Métodos Estáticos de la clase [Int32]
+        // Métodos Estáticos de la clase [Array]
 
 
         /*
