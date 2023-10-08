@@ -28,7 +28,7 @@ public class Int
         // Métodos Estáticos de la clase [Int32]
 
         /*
-         * Parse()
+         * Parse(string s)
          * Convierte la representación en forma de cadena de un número en el
          * entero de 32 bits con signo equivalente.
         */

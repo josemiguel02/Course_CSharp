@@ -36,7 +36,7 @@ public class Array
         // Métodos Estáticos de la clase [Array]
 
         /*
-         * Find(T[] array, predicate)
+         * Find(T[] array, Predicate<T> match)
          * Busca un elemento que coincida con las condiciones definidas por
          * el predicado especificado y devuelve la primera aparición en
          * toda la matriz Array.
@@ -48,7 +48,7 @@ public class Array
 
 
         /*
-         * FindAll(T[] array, predicate)
+         * FindAll(T[] array, Predicate<T> match)
          * Recupera todos los elementos que coinciden con las condiciones definidas
          * por el predicado especificado.
         */
@@ -61,7 +61,7 @@ public class Array
 
 
         /*
-         * FindIndex(T[] array, predicate)
+         * FindIndex(T[] array, Predicate<T> match)
          * Busca un elemento que cumpla las condiciones definidas por el predicado especificado y
          * devuelve el índice (index) de la primera aparición de un Array.
         */
@@ -71,23 +71,51 @@ public class Array
             "Earth", "Mars", "Jupiter",
             "Saturn", "Uranus", "Neptune"
         };
+
         var planetaIndex = System.Array.FindIndex(planetas, planeta => planeta.StartsWith("Ju"));
         Console.WriteLine(planetas[planetaIndex]);
 
 
         /*
-         * ForEach()
+         * Exists(T[] array, Predicate<T> match)
+         * Determina si la matriz especificada contiene elementos que coinciden con
+         * las condiciones definidas por el predicado especificado.
+        */
+        var existeUva = System.Array.Exists(frutas, fruta => fruta == "Uva");
+        Console.WriteLine(existeUva);
+
+
+        /*
+         * TrueForAll(T[] array, Predicate<T> match)
+         * Determina si cada elemento de la matriz cumple las condiciones definidas por
+         * el predicado especificado.
+        */
+        string[] carros = new string[] { "Volvo", "BMW", "Ford", "Mazda" };
+
+        var todosTerminanConA = System.Array.TrueForAll(carros, carro => carro.EndsWith("a"));
+        Console.WriteLine(todosTerminanConA);
+
+
+        /*
+         * ForEach(T[] array, Action<T> action)
          * Realiza la acción especificada en cada elemento de la matriz especificada.
         */
         System.Array.ForEach(planetas, planeta => { Console.WriteLine(planeta); });
 
 
         /*
-         * Exists()
-         * Determina si la matriz especificada contiene elementos que coinciden con
-         * las condiciones definidas por el predicado especificado.
+         * Reverse(Array array, int index, int length)
+         * Invierte el orden de los elementos de una Array unidimensional o de una parte de la Array.
         */
-        var existeUva = System.Array.Exists(frutas, item => item == "Uva");
-        Console.WriteLine(existeUva);
+        System.Array.Reverse(planetas, 0, planetas.Length);
+        Console.WriteLine(string.Join(" - ", planetas));
+
+
+        /*
+         * Sort(T[] array)
+         * Ordena los elementos en una matriz unidimensional.
+        */
+        System.Array.Sort(carros);
+        Console.WriteLine(string.Join(", ", carros));
     }
 }
