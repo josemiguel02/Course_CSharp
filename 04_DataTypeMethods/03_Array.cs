@@ -35,7 +35,6 @@ public class Array
 
         // Métodos Estáticos de la clase [Array]
 
-
         /*
          * Find(T[] array, predicate)
          * Busca un elemento que coincida con las condiciones definidas por
@@ -46,5 +45,49 @@ public class Array
 
         var frutilla = System.Array.Find(frutas, item => item == "Frutilla");
         Console.WriteLine(frutilla);
+
+
+        /*
+         * FindAll(T[] array, predicate)
+         * Recupera todos los elementos que coinciden con las condiciones definidas
+         * por el predicado especificado.
+        */
+        var frutasConA = System.Array.FindAll(frutas, fruta => fruta.Contains("a"));
+
+        foreach (var fruta in frutasConA)
+        {
+            Console.WriteLine(fruta);
+        }
+
+
+        /*
+         * FindIndex(T[] array, predicate)
+         * Busca un elemento que cumpla las condiciones definidas por el predicado especificado y
+         * devuelve el índice (index) de la primera aparición de un Array.
+        */
+        string[] planetas = new string[]
+        {
+            "Mercury", "Venus",
+            "Earth", "Mars", "Jupiter",
+            "Saturn", "Uranus", "Neptune"
+        };
+        var planetaIndex = System.Array.FindIndex(planetas, planeta => planeta.StartsWith("Ju"));
+        Console.WriteLine(planetas[planetaIndex]);
+
+
+        /*
+         * ForEach()
+         * Realiza la acción especificada en cada elemento de la matriz especificada.
+        */
+        System.Array.ForEach(planetas, planeta => { Console.WriteLine(planeta); });
+
+
+        /*
+         * Exists()
+         * Determina si la matriz especificada contiene elementos que coinciden con
+         * las condiciones definidas por el predicado especificado.
+        */
+        var existeUva = System.Array.Exists(frutas, item => item == "Uva");
+        Console.WriteLine(existeUva);
     }
 }
