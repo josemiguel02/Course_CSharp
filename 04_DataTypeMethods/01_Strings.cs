@@ -35,7 +35,6 @@ public class Strings
          * Devuelve una subcadena a partir de un índice dado.
         */
         string txt4 = "Hola mundo";
-
         Console.WriteLine(txt4.Substring(0, 5));
 
 
@@ -152,7 +151,7 @@ public class Strings
 
 
         /*
-         * Join(string separator, string[] value)
+         * Join(string separator, object?[] values)
          * Concatena (une) los elementos de una matriz especificada o los miembros de
          * una colección, usando el separador indicado entre todos los elementos.
         */
