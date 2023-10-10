@@ -7,11 +7,17 @@ public class Array
     public Array()
     {
         /*
-         * GetValue()
-         * Obtiene el valor del elemento especificado de la Array actual.
+         * Length
+         * Obtiene el número total de elementos de un Array.
         */
         string[] arr = new string[] { "Item 1", "Item 2", "Item 3" };
+        Console.WriteLine(arr.Length);
 
+
+        /*
+         * GetValue()
+         * Obtiene el valor del elemento especificado de un Array.
+        */
         Console.WriteLine(arr.GetValue(1));
 
 
