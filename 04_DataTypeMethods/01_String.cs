@@ -2,9 +2,9 @@
 
 namespace Course_CSharp._04_DataTypeMethods;
 
-public class Strings
+public class String
 {
-    public Strings()
+    public String()
     {
         /*
          * Length
