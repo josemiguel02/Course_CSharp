@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Course_CSharp._02_DataStructures;
 
-public class List
+public class Lists
 {
-    public List()
+    public Lists()
     {
         // Declarando una Lista
         List<string> miLista = new List<string>();
