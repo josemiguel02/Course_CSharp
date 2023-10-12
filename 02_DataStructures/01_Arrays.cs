@@ -2,9 +2,9 @@
 
 namespace Course_CSharp._02_DataStructures;
 
-public class Array
+public class Arrays
 {
-    public Array()
+    public Arrays()
     {
         /*
          * Inicialización de Arrays en C#
