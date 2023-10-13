@@ -2,9 +2,9 @@
 
 namespace Course_CSharp._04_DataTypeMethods;
 
-public class Strings
+public class String
 {
-    public Strings()
+    public String()
     {
         /*
          * Length
@@ -35,12 +35,11 @@ public class Strings
          * Devuelve una subcadena a partir de un índice dado.
         */
         string txt4 = "Hola mundo";
-
         Console.WriteLine(txt4.Substring(0, 5));
 
 
         /*
-         * Replace(oldValue, newValue)
+         * Replace(string oldValue, string newValue)
          * Reemplaza todas las apariciones de un valor en la cadena por otro.
         */
         Console.WriteLine(txt4.Replace("mundo", "strange!"));
@@ -67,7 +66,7 @@ public class Strings
 
 
         /*
-         * IndexOf()
+         * IndexOf(string value)
          * Busca en toda la cadena de string y devuelve el indice (index)
          * de la primera cadena encontrada.
         */
@@ -75,7 +74,7 @@ public class Strings
 
 
         /*
-         * LastIndexOf()
+         * LastIndexOf(string value)
          * Busca en toda la cadena de string y devuelve el indice (index)
          * de la última cadena encontrada.
         */
@@ -107,7 +106,7 @@ public class Strings
 
 
         /*
-         * PadLeft()
+         * PadLeft(int totalWidth, char paddingChar)
          * Devuelve una nueva cadena de una longitud especificada en la que el principio
          * de la cadena actual se rellena con espacios o con un carácter especificado.
         */
@@ -116,7 +115,7 @@ public class Strings
 
 
         /*
-         * PadRight()
+         * PadRight(int totalWidth, char paddingChar)
          * Devuelve una nueva cadena de una longitud especificada en la que el final
          * de la cadena actual se rellena con espacios o con un carácter especificado.
         */
@@ -137,7 +136,7 @@ public class Strings
 
 
         /*
-         * Concat()
+         * Concat(string? str0, string? str1, string? str2)
          * Concatena una o más cadenas de string con otra.
         */
         Console.WriteLine(string.Concat("Text1 ", "Text2 ", "Text3"));
@@ -152,7 +151,7 @@ public class Strings
 
 
         /*
-         * Join(string separator)
+         * Join(string separator, object?[] values)
          * Concatena (une) los elementos de una matriz especificada o los miembros de
          * una colección, usando el separador indicado entre todos los elementos.
         */
@@ -167,10 +166,10 @@ public class Strings
 
 
         /*
-         * Compare()
+         * Compare(string strA, string strB)
          * Compara 2 String especificados y devuelve un entero que indica su posición
          * relativa en el criterio de ordenación.
-         */
+        */
         string nombre1 = "Jack Smith";
         string nombre2 = "John Doe";
         Console.WriteLine(string.Compare(nombre1, nombre2));
