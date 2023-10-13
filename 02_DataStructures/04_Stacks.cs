@@ -17,12 +17,14 @@ public class Stacks
         // Declarando un Stack
         Stack miStack = new Stack();
 
-        // Apilando elementos a un Stack
+        // Apilando elementos al Stack
         miStack.Push("Hola");
         miStack.Push("Mundo");
         miStack.Push("!");
 
-        // Eliminando un elemento de un Stack
+        // Quitando y devolviendo el objeto situado al principio del Stack.
+        Console.WriteLine(miStack.Pop());
+
         Console.WriteLine(miStack);
 
 
@@ -36,6 +38,8 @@ public class Stacks
         stackConTipo.Push("Item 1");
         stackConTipo.Push("Item 2");
         stackConTipo.Push("Item 3");
+
+        Console.WriteLine(stackConTipo.Pop());
 
         Console.WriteLine(stackConTipo);
     }
