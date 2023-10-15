@@ -67,4 +67,31 @@ public class Carro : Vehiculo
 
         Console.WriteLine($"Color: {Color} \nRuedas: {Ruedas}");
     }
+
+    public void Girar(string direccion)
+    {
+        Console.WriteLine($"Soy {Marca}, estoy girando a la {direccion}!");
+    }
+}
+
+// 2da Clase Hija
+public class Moto : Vehiculo
+{
+    public int Cilindrada;
+
+    public Moto(string marca, string modelo, int cilindrada) : base(marca, modelo, 2)
+    {
+        Cilindrada = cilindrada;
+    }
+
+    public override void ObtenerDatos()
+    {
+        base.ObtenerDatos();
+        Console.WriteLine($"Cilindrada: {Cilindrada} \nRuedas: {Ruedas}");
+    }
+
+    public void HacerAcrobacia()
+    {
+        Console.WriteLine($"Soy {Marca}, estoy haciendo una acrobacia!");
+    }
 }
