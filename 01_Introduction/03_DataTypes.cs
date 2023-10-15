@@ -127,12 +127,12 @@ public class DataTypes
          *
         */
 
-        // Objetos => { key = "value" }
-        var personObj = new { name = "Jhon", surname = "Doe" };
+        // Tipos Anónimos => { Property = "Value" }
+        var personObj = new { Name = "Jhon", Surname = "Doe" };
 
         Console.WriteLine(personObj);
-        Console.WriteLine(personObj.name);
-        Console.WriteLine(personObj.surname);
+        Console.WriteLine(personObj.Name);
+        Console.WriteLine(personObj.Surname);
 
 
         /*
