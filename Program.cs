@@ -1,4 +1,4 @@
-﻿using Course_CSharp._05_POO;
+﻿using Course_CSharp._06_Generics;
 
 namespace Course_CSharp;
 
@@ -6,6 +6,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-        new POO();
+        new Generics();
     }
 }
