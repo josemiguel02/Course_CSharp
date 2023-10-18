@@ -21,5 +21,11 @@ public class Generics
         operacion.AgregarResultado(200);
 
         Console.WriteLine(operacion.ObtenerResultado());
+
+
+        // Interfaces Genéricas
+        MiClase miClase = new MiClase();
+
+        Console.WriteLine(miClase.ObtenerDatos());
     }
 }
