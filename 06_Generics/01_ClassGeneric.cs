@@ -1,5 +1,3 @@
-using System;
-
 namespace Course_CSharp._06_Generics;
 
 /*
@@ -10,7 +8,7 @@ namespace Course_CSharp._06_Generics;
  *
 */
 
-// Clase Generica
+// Clase Genérica
 // Para convertir una clase en generica debemos usar la siguiente sintaxis:
 // public class NombreClase<T> {}
 public class ArregloGenerico<T>
