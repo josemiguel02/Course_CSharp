@@ -1,11 +1,12 @@
-﻿using Course_CSharp._06_Generics;
+﻿using System.Threading.Tasks;
+using Course_CSharp._07_Asynchronism;
 
 namespace Course_CSharp;
 
 class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
-        new Generics();
+        await TaskClass.CrearTarea();
     }
 }
