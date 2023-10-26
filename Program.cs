@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Course_CSharp._07_Asynchronism;
+using Course_CSharp._08_Exceptions;
 
 namespace Course_CSharp;
 
@@ -7,9 +7,6 @@ class Program
 {
     public static async Task Main(string[] args)
     {
-        // await TaskClass.CrearTareas();
-        // await TaskMethods.ObtenerMetodos();
-
-        await TaskProps.ObtenerPropiedades();
+        new CustomException();
     }
 }
