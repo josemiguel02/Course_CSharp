@@ -7,6 +7,9 @@ class Program
 {
     public static async Task Main(string[] args)
     {
-        await TaskClass.CrearTarea();
+        // await TaskClass.CrearTareas();
+        // await TaskMethods.ObtenerMetodos();
+
+        await TaskProps.ObtenerPropiedades();
     }
 }
