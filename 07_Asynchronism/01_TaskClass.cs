@@ -11,7 +11,7 @@ namespace Course_CSharp._07_Asynchronism;
 public class TaskClass
 {
     // Creación de instancias de la clase Task
-    public static async Task CrearTarea()
+    public static async Task CrearTareas()
     {
         var miTarea = new Task(() =>
         {
@@ -20,11 +20,23 @@ public class TaskClass
             Console.WriteLine("Tarea interna de Task");
         });
 
+        // Iniciando la tarea con el método Start()
         miTarea.Start();
 
+        // Esperando a que termine la tarea usando la palabra reservada: await
         await miTarea;
 
-        Console.WriteLine("Ha terminado la tarea!");
+        var miTarea2 = new Task(() =>
+        {
+            Thread.Sleep(2000);
+
+            Console.WriteLine("Tarea 2 interna de Task");
+        });
+
+        miTarea2.Start();
+        await miTarea2;
+
+        Console.WriteLine("Han terminado las tareas!");
         Console.ReadKey();
     }
 }
