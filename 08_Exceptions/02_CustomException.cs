@@ -18,7 +18,7 @@ public class CustomException
         }
         catch (StringNullException e)
         {
-            Console.WriteLine($"Error: {e.Message} - {e.GetType().Name}");
+            Console.WriteLine($"Error: {e.Message} - {nameof(StringNullException)}");
         }
     }
 }
