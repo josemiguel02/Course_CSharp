@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Course_CSharp._07_Asynchronism;
+using Course_CSharp._09_FileSystem;
 
 namespace Course_CSharp;
 
@@ -7,6 +7,6 @@ class Program
 {
     public static async Task Main(string[] args)
     {
-        await TaskClass.CrearTarea();
+        new FileClass();
     }
 }
