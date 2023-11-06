@@ -1,12 +1,11 @@
-﻿using System.Threading.Tasks;
-using Course_CSharp._09_FileSystem;
+﻿using Course_CSharp._10_TypeCasting;
 
 namespace Course_CSharp;
 
 class Program
 {
-    public static async Task Main(string[] args)
+    public static void Main(string[] args)
     {
-        new FileClass();
+        new TypeCasting();
     }
 }
