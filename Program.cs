@@ -1,4 +1,4 @@
-﻿using Course_CSharp._10_TypeCasting;
+﻿using Course_CSharp._11_LambdaExpressions;
 
 namespace Course_CSharp;
 
@@ -6,6 +6,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-        new TypeCasting();
+        new LambdaExpressions();
     }
 }
